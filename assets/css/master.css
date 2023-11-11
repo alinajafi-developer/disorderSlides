@@ -1,0 +1,79 @@
+.borderBox, *, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(90deg, rgb(32, 32, 32), rgb(31, 31, 31));
+}
+.box > div {
+  width: 100%;
+  height: 100%;
+  animation: anim 10s ease-in-out infinite alternate;
+}
+
+@keyframes anim {
+  20% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-image: url("../imgs/1.jpg");
+    background-size: cover;
+  }
+  25% {
+    -webkit-clip-path: polygon(17% 37%, 79% 37%, 79% 70%, 17% 70%);
+            clip-path: polygon(17% 37%, 79% 37%, 79% 70%, 17% 70%);
+    background-image: url("../imgs/2.jpg");
+    background-size: cover;
+  }
+  30% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-image: url("../imgs/2.jpg");
+    background-size: cover;
+  }
+  50% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-image: url("../imgs/2.jpg");
+    background-size: cover;
+  }
+  55% {
+    -webkit-clip-path: polygon(17% 37%, 79% 37%, 79% 70%, 17% 70%);
+            clip-path: polygon(17% 37%, 79% 37%, 79% 70%, 17% 70%);
+    background-image: url("../imgs/3.jpg");
+    background-size: cover;
+  }
+  60% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-image: url("../imgs/3.jpg");
+    background-size: cover;
+  }
+  80% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-image: url("../imgs/3.jpg");
+    background-size: cover;
+  }
+  85% {
+    -webkit-clip-path: polygon(17% 37%, 79% 37%, 79% 70%, 17% 70%);
+            clip-path: polygon(17% 37%, 79% 37%, 79% 70%, 17% 70%);
+    background-image: url("../imgs/4.jpg");
+    background-size: cover;
+  }
+  90% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-image: url("../imgs/4.jpg");
+    background-size: cover;
+  }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-image: url("../imgs/4.jpg");
+    background-size: cover;
+  }
+}/*# sourceMappingURL=master.css.map */

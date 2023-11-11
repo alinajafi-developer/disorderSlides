@@ -1,0 +1,89 @@
+.borderBox {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+
+    &::before,
+    &::after {
+        @extend .borderBox;
+    }
+
+    @extend .borderBox;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgb(32, 32, 32),rgb(31, 31, 31));
+    >div {
+        width: 100%;
+        height: 100%;
+        animation: anim 10s ease-in-out infinite alternate;
+
+    }
+}
+
+@keyframes anim {
+    
+   
+    
+    20% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background-image: url('../imgs/1.jpg');
+        background-size: cover;
+    }
+
+    25% {
+        clip-path: polygon(17% 37%, 79% 37%, 79% 70%, 17% 70%);
+        background-image: url('../imgs/2.jpg');
+        background-size: cover;
+    }
+
+    30% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background-image: url('../imgs/2.jpg');
+        background-size: cover;
+    }
+
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background-image: url('../imgs/2.jpg');
+        background-size: cover;
+    }
+
+    55% {
+        clip-path: polygon(17% 37%, 79% 37%, 79% 70%, 17% 70%);
+        background-image: url('../imgs/3.jpg');
+        background-size: cover;
+    }
+    60% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background-image: url('../imgs/3.jpg');
+        background-size: cover;
+    }
+    80% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background-image: url('../imgs/3.jpg');
+        background-size: cover;
+    }
+    85% {
+        clip-path: polygon(17% 37%, 79% 37%, 79% 70%, 17% 70%);
+        background-image: url('../imgs/4.jpg');
+        background-size: cover;
+    }
+
+    90% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background-image: url('../imgs/4.jpg');
+        background-size: cover;
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background-image: url('../imgs/4.jpg');
+        background-size: cover;
+    }
+}
