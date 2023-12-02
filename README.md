@@ -4,7 +4,7 @@
 https://github.com/alinajafiweb/disorderSlides/assets/147813870/cc5419bc-7afc-4640-a030-1352301676b1
 
 
-- [Demo Project](https://alinajafiweb.github.io/disorderSlides/)
+- [Demo Project](https://aliafrouz.github.io/disorderSlides/)
 
 - Developed by Ali Afrouz
 
